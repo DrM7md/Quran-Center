@@ -116,8 +116,8 @@
         <div class="fixed inset-0 z-50">
             <div class="absolute inset-0 bg-black/40" wire:click="closeModal"></div>
 
-            <div class="relative min-h-screen flex items-center justify-center p-4">
-                <div class="w-full max-w-xl bg-white rounded-xl shadow-xl border border-gray-200">
+            <div class="relative min-h-screen flex items-start justify-center p-4 pt-10 sm:pt-16 overflow-y-auto">
+                <div class="w-full max-w-xl bg-white rounded-xl shadow-xl border border-gray-200 mb-10">
                     <div class="p-5 sm:p-6 border-b border-gray-200 flex items-center justify-between">
                         <div>
                             <div class="text-xs text-gray-500">المراكز</div>
@@ -134,14 +134,14 @@
 
                             <div>
                                 <label class="block text-sm font-bold mb-2">اسم المركز</label>
-                                <input wire:model="name" placeholder="مثال: مركز النور"
+                                <input wire:model="name"
                                        class="w-full rounded-lg border-gray-300 focus:border-blue-500 focus:ring-blue-500">
                                 @error('name') <div class="text-rose-600 text-xs mt-2">{{ $message }}</div> @enderror
                             </div>
 
                             <div>
                                 <label class="block text-sm font-bold mb-2">المنطقة / الموقع <span class="text-gray-400 font-normal">(اختياري)</span></label>
-                                <input wire:model="location" placeholder="مثال: حي النزهة، الرياض"
+                                <input wire:model="location"
                                        class="w-full rounded-lg border-gray-300 focus:border-blue-500 focus:ring-blue-500">
                                 @error('location') <div class="text-rose-600 text-xs mt-2">{{ $message }}</div> @enderror
                             </div>
