@@ -2,7 +2,16 @@
   "permissions": {
     "allow": [
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git remote:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(ssh -p 65002 -o StrictHostKeyChecking=no -o BatchMode=yes u229998316@185.224.137.29 \"echo connected\")",
+      "Bash(python -c \"import paramiko; print\\(''ok''\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python -c \":*)",
+      "Bash(python:*)"
     ]
   }
 }
