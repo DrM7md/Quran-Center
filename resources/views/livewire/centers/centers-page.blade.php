@@ -113,11 +113,11 @@
 
     {{-- Modal Create/Edit --}}
     @if($showModal)
-        <div class="fixed inset-0 z-50">
-            <div class="absolute inset-0 bg-black/40" wire:click="closeModal"></div>
+        <div class="fixed inset-0 z-50 overflow-y-auto">
+            <div class="fixed inset-0 bg-black/40" wire:click="closeModal"></div>
 
-            <div class="relative min-h-screen flex items-start justify-center p-4 pt-10 sm:pt-16 overflow-y-auto">
-                <div class="w-full max-w-xl bg-white rounded-xl shadow-xl border border-gray-200 mb-10">
+            <div class="relative flex items-start justify-center min-h-full p-4 py-8">
+                <div class="w-full max-w-xl bg-white rounded-xl shadow-xl border border-gray-200 relative">
                     <div class="p-5 sm:p-6 border-b border-gray-200 flex items-center justify-between">
                         <div>
                             <div class="text-xs text-gray-500">المراكز</div>
